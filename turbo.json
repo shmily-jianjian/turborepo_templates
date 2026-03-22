@@ -1,6 +1,9 @@
 {
   "$schema": "https://turborepo.dev/schema.json",
+<<<<<<< HEAD
   "ui": "tui",
+=======
+>>>>>>> 403f9c4 (feat: orpc)
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
