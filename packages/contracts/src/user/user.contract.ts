@@ -1,7 +1,7 @@
 import { oc } from '@orpc/contract';
 import { addUserInputSchema, addUserOutputSchema, userInputSchema, userOutputSchema } from './user.schema';
 
-export const userContract = oc.router({
+export const userContract = {
   getUser: oc
     .route({
       path: '/user/get',
@@ -19,4 +19,4 @@ export const userContract = oc.router({
     })
     .input(addUserInputSchema)
     .output(addUserOutputSchema),
-});
+};

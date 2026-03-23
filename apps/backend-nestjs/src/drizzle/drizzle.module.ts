@@ -15,8 +15,4 @@ export const DRIZZLE_CLIENT = Symbol('DRIZZLE_CLIENT');
   ],
   exports: [DRIZZLE_CLIENT],
 })
-<<<<<<< HEAD
 export class DrizzleModule {}
-=======
-export class DrizzleModule {}
->>>>>>> 403f9c4 (feat: orpc)

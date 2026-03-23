@@ -2,11 +2,6 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { DrizzleModule } from './drizzle/drizzle.module';
-<<<<<<< HEAD
-
-@Module({
-  imports: [DrizzleModule],
-=======
 import { onError, ORPCModule } from '@orpc/nest';
 import { Request } from 'express';
 import { REQUEST } from '@nestjs/core';
@@ -33,7 +28,6 @@ import { experimental_RethrowHandlerPlugin as RethrowHandlerPlugin } from '@orpc
     }),
     DrizzleModule,
   ],
->>>>>>> 403f9c4 (feat: orpc)
   controllers: [AppController],
   providers: [AppService],
 })

@@ -1,12 +1,4 @@
 <script setup lang="ts">
-<<<<<<< HEAD
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
-<template>
-  <HelloWorld />
-</template>
-=======
 import { onMounted, ref } from 'vue';
 import { orpcClient } from './lib/orpc';
 import type { InferClientOutputs } from '@orpc/client';
@@ -49,4 +41,3 @@ async function addUser() {
   </div>
   <button @click="addUser">添加用户</button>
 </template>
->>>>>>> 403f9c4 (feat: orpc)

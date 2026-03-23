@@ -5,6 +5,8 @@ import type { JsonifiedClient } from '@orpc/openapi-client';
 
 import { contract } from 'contracts';
 
+console.log(contract, 'contract..');
+
 const link = new OpenAPILink(contract, {
   url: 'http://localhost:3000',
   headers: () => {
@@ -12,6 +14,7 @@ const link = new OpenAPILink(contract, {
       Authorization: `Bearer ${localStorage.getItem('token') ?? 'hahaha'}`,
     };
   },
+  // fetch
 });
 
 type Client = JsonifiedClient<ContractRouterClient<typeof contract>>;

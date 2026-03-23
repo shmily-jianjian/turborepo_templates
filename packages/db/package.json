@@ -3,16 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
-<<<<<<< HEAD
-  "scripts": {
-    "build": "tsc",
-    "dev": "tsc -w",
-=======
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./src/index.ts",
+      "import": "./dist/index.js",
       "require": "./dist/index.js",
       "default": "./dist/index.js"
     }
@@ -20,7 +15,6 @@
   "scripts": {
     "dev": "tsc -w",
     "build": "tsc",
->>>>>>> 403f9c4 (feat: orpc)
     "drizzle:generate": "drizzle-kit generate",
     "drizzle:migrate": "drizzle-kit migrate",
     "drizzle:push": "drizzle-kit push"
