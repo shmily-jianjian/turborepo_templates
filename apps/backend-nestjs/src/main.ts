@@ -4,6 +4,12 @@ import { NestExpressApplication } from '@nestjs/platform-express';
 import { AllExceptionsFilter } from './common/filters/all-exceptions.filter';
 import { LoggingInterceptor } from './common/interceptors/logging.interceptor';
 import { Logger } from '@nestjs/common';
+import * as dotenv from 'dotenv';
+import path from 'node:path';
+
+dotenv.config({
+  path: path.resolve(__dirname, '../../../.env'),
+});
 
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule, {

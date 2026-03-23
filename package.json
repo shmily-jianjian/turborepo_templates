@@ -8,7 +8,8 @@
     "lint": "turbo run lint",
     "format": "turbo run format",
     "check-types": "turbo run check-types",
-    "lint:staged": "lint-staged"
+    "lint:staged": "lint-staged",
+    "prepare": "husky"
   },
   "devDependencies": {
     "husky": "^9.1.7",
